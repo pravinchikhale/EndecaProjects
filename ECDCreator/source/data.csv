@@ -1,0 +1,9 @@
+CATEGORY_ID,CATEGORY_NAME,PARENT_ID
+1,Wine Type,
+2,Red,1
+3,Beaujolais,2
+4,Bordeaux,2
+5,Cabernet Franc,2
+6,Sparkling,1
+7,Blanc de Blancs,6
+8,Brut,6

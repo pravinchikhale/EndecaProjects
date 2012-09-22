@@ -1,0 +1,30 @@
+Element carElement = new Element("car");
+Document myDoc = new Document(carElement);
+carElement.addContent(new Comment("Description of a car"));
+Attribute attr = new Attribute("vin", "123fhg5869705iop90");
+carElement.setAttribute(attr);
+Element make = new Element("make");
+make.addContent("Toyota");
+carElement.addContent(make);
+carElement.addContent(new Element("model").addContent("Celica"));
+carElement.addContent(new Element("year").addContent("1997"));
+carElement.addContent(new Element("color").addContent("green"));
+carElement.addContent(new Element("license").addContent("1ABC234")
+.setAttribute("state", "CA"));
+
+
+XMLOutputter xmlOutputter = new XMLOutputter();
+xmlOutputter.setFormat(Format.getPrettyFormat());
+xmlOutputter.output(myDoc, System.out);
+
+<?xml version="1.0" encoding="UTF-8"?>
+<car vin="123fhg5869705iop90">
+  <!--Description of a car-->
+  <make>Toyota</make>
+  <model>Celica</model>
+  <year>1997</year>
+  <color>green</color>
+  <license state="CA">1ABC234</license>
+</car>
+<?xml version="1.0" encoding="UTF-8"?>
+<DIMENSIONS VERSION="1.0.0" />
