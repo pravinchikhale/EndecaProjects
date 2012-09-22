@@ -15,7 +15,7 @@ public class Test {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		System.out.println("Starting ECD generator utility.");
+//		System.out.println("Starting ECD generator utility.");
 		Document rootDimension = new Document();
 
 		createRootDimension(rootDimension);
