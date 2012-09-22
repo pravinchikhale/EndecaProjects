@@ -15,13 +15,14 @@ public class Test {
 	 */
 	public static void main(String[] args) throws IOException {
 
-//		System.out.println("Starting ECD generator utility.");
+		System.out.println("Starting ECD generator utility.");
 		Document rootDimension = new Document();
 
 		createRootDimension(rootDimension);
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat());
 		xmlOutputter.output(rootDimension, System.out);
+		System.out.println("Ending ECD generator utility.");
 	}
 
 	private static void createDimensionNode(Element dimension) {
