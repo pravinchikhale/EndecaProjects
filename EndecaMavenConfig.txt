@@ -1,0 +1,33 @@
+mvn install:install-file -Dfile=/home/pravin/setup/endeca/ToolsAndFrameworks/11.2.0/reference/discover-electronics-authoring/WEB-INF/lib/endeca_assembler_core-11.2.0.jar -DgroupId=com.endeca -DartifactId=endeca_assembler_core -Dversion=11.2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=/home/pravin/setup/endeca/ToolsAndFrameworks/11.2.0/reference/discover-electronics-authoring/WEB-INF/lib/endeca_logging-11.2.0.jar -DgroupId=com.endeca -DartifactId=endeca_logging -Dversion=11.2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=/home/pravin/setup/endeca/ToolsAndFrameworks/11.2.0/reference/discover-electronics-authoring/WEB-INF/lib/endeca_assembler_navigation-11.2.0.jar -DgroupId=com.endeca -DartifactId=endeca_assembler_navigation -Dversion=11.2.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=/home/pravin/setup/endeca/ToolsAndFrameworks/11.2.0/reference/discover-electronics-authoring/WEB-INF/lib/endeca_navigation-6.5.2.jar -DgroupId=com.endeca -DartifactId=endeca_navigation -Dversion=6.5.2 -Dpackaging=jar
+ 
+POM.xml entries:
+
+<dependency>
+  <groupId>com.endeca</groupId>
+  <artifactId>endeca_assembler_core</artifactId>
+  <version>11.2.0</version>
+</dependency>
+
+<dependency>
+  <groupId>com.endeca</groupId>
+  <artifactId>endeca_logging</artifactId>
+  <version>11.2.0</version>
+</dependency>
+
+<dependency>
+  <groupId>com.endeca</groupId>
+  <artifactId>endeca_assembler_navigation</artifactId>
+  <version>11.2.0</version>
+</dependency>
+
+<dependency>
+  <groupId>com.endeca</groupId>
+  <artifactId>endeca_navigation</artifactId>
+  <version>6.5.2</version>
+</dependency>
